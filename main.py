@@ -1,12 +1,11 @@
+from stats import num_count
+
 def get_book_text():
     with open("/home/jaeger/bookbot/books/frankenstein.txt", "r") as f:
         content = f.read()
     print (content)
     return (content)
 
-def num_count():
-    content = get_book_text()
-    text = len(content.split())
-    print (f"{text} words found in the document")
+content = get_book_text()
 
-num_count()
+num_count(content)
