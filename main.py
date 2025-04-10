@@ -1,4 +1,4 @@
-from stats import num_count
+from stats import num_count, letter_count
 
 def get_book_text():
     with open("/home/jaeger/bookbot/books/frankenstein.txt", "r") as f:
@@ -9,3 +9,4 @@ def get_book_text():
 content = get_book_text()
 
 num_count(content)
+letter_count(content)
